@@ -1,0 +1,56 @@
+{
+  "name": "vue3-virtual-scroller",
+  "description": "a omponent that only renders the visible items in your list. It also re-uses components and dom elements to be as efficient and performant as possible.",
+  "version": "1.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.jsx,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "main": "./dist/vue3-virtual-scroller.umd.cjs",
+  "module": "./dist/vue3-virtual-scroller.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-virtual-scroller.js",
+      "require": "./dist/vue3-virtual-scroller.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moussa-rs/vue3-virtual-scroller.git"
+  },
+  "types": "types/index.d.ts",
+  "dependencies": {
+    "mitt": "^2.1.0",
+    "vue-observe-visibility": "^2.0.0-alpha.1",
+    "vue-resize": "^2.0.0-alpha.1",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@vue/compiler-sfc": "^3.0.11",
+    "autoprefixer": "^9.7.5",
+    "clean-css": "^4.1.8",
+    "cross-env": "^7.0.2",
+    "fs-extra": "^9.1.0",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@types/node": "^18.14.2",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "@vue/tsconfig": "^0.1.3",
+    "eslint": "^8.34.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.4",
+    "typescript": "~4.8.4",
+    "vite": "^4.1.4",
+    "vue-tsc": "^1.2.0"
+  }
+}
